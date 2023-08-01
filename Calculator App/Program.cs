@@ -1,26 +1,15 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using System;
 
-// Add services to the container.
-builder.Services.AddRazorPages();
-
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+namespace MyCalculatorApp
 {
-    app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    static void Main(string[] args)
+    {
+        double num1;
+
+        Console.WriteLine("-------");
+        Console.WriteLine("Calculator App");
+        Console.WriteLine("-------");
+
+        Console.ReadKey();
+    }
 }
-
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
-
-app.MapRazorPages();
-
-app.Run();
-
