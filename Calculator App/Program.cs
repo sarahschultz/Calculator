@@ -2,16 +2,21 @@
 
 namespace MyCalculatorApp
 {
-    static void Main(string[] args)
+    class Program
     {
-            double num1 = 0;
-            double num2 = 0;
-            double result = 0;
+        static void Main(string[] args)
+        {
+            Console.Write("Enter a Number: ");
+            int num1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("-------");
-            Console.WriteLine("Calculator App");
-            Console.WriteLine("-------");
+            Console.Write("Enter another Number: ");
+            int num2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.ReadKey();
+            Console.WriteLine(num1 + num2);
+
+      
+
+            Console.ReadLine();
         }
+    }
 }
